@@ -1,0 +1,11 @@
+name: Runner Contexts
+on: push
+jobs:
+  print
+    runs-on: ubuntu-latest
+    steps:
+      - echo "name=${{ runner.name }}"
+      - echo "os=${{ runner.os }}"
+      - echo "arch=${{ runner.arch }}"
+      - echo "temp=${{ runner.temp }}"
+      - echo "debug=${{ runner.debug }}"
