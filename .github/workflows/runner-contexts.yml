@@ -1,7 +1,7 @@
 name: Runner Contexts
 on: push
 jobs:
-  print
+  print:
     runs-on: ubuntu-latest
     steps:
       - echo "name=${{ runner.name }}"
