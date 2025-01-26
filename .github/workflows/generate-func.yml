@@ -2,7 +2,7 @@ name: Generate functions
 on: push
 jobs:
   ccc:
-    runs-on: ubunts-latest
+    runs-on: ubuntu-latest
     steps:
       - run: printenv | grep '_FUNC'
         env:
